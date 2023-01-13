@@ -1,0 +1,197 @@
+
+.header__logo
+   position: absolute
+   top: 3.35rem
+   left: 4rem
+   width: 11.1rem
+   @include respond(fifth-1190)
+      width: 20rem
+
+.navigation_main
+   position: absolute
+   left: 21.5rem
+   top: 2.7rem
+   max-width: 75rem
+   height: 3.8rem
+   display: flex
+   font-size: 2rem
+   @include respond(fifth-1190)
+      display: none
+   &__link
+      padding: .9rem 1.8rem
+      background: white
+      border-radius: 4.2rem
+      font-weight: 400
+      &:not(:last-child)
+         margin-right: .8rem
+   
+
+         
+
+         
+.section__about
+   display: flex
+   width: 48.2rem
+   height: 2.6rem
+   position: absolute
+   top: 3.3rem
+   right: 29.65rem
+   font-size: 1.7rem
+   color: white !important
+   @include respond(third-1400)
+   font-size: 14px
+   display: flex
+   width: max-content
+   @include respond(fifth-1190)
+      font-size: 3rem
+      right: 40rem
+   @include respond(sixth-990)
+      font-size: 3.5rem
+      right: 50rem
+      top: 4.2rem
+   @include respond(seventh-820)
+      font-size: 3.5rem
+      top: 4.2rem
+      right: 50rem
+   @include respond(phone)
+      display: none
+   &_link:not(:last-child)
+      margin-right: 4rem
+   &_link > a
+      color: white !important
+
+.header__btn
+   height: 6rem
+   width: 20.2rem
+   font-size: 1.9rem
+   background: #312DFF
+   border-radius: 1.2rem
+   border: 0px
+   position: absolute
+   top: 1.6rem
+   right: 4rem
+   color: white
+   cursor: pointer
+   @include respond(fifth-1190)
+      right: 16rem
+      font-size: 2.2rem
+   @include respond(sixth-990)
+      width: 30rem
+      height: 10rem
+      font-size: 3rem
+
+
+.navigation
+   display: none
+   @include respond(fifth-1190)
+      display: block
+   &__toggle
+      display: none
+   &__button
+      background: none
+      height: 8rem
+      width: 8rem
+      border-radius: 50%
+      position: fixed
+      top: -2rem
+      right: 3rem
+      z-index: 200
+      text-align: center
+      cursor: pointer
+      @include respond(phone)
+         top: -5rem
+         
+         
+   &__nav
+      height: 100vh
+      position: fixed
+      top: 0
+      right: 0
+      z-index: 150
+      opacity: 0
+      width: 0
+      transition: all .3s cubic-bezier(0.68, -0.6, 0.32, 1.6)
+   &__background
+      width: 0rem
+      height: 0
+      border-radius: 50%
+      background: white
+      position: fixed
+      right: 7rem
+      top: 5rem
+      z-index: 100
+      transition: all .7s
+   &__list
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      list-style: none
+      width: 100%
+        
+   &__item
+      text-align: center
+      &:not(:last-child)
+         margin-bottom: 5rem
+   &__link
+      &:link, &:visited    
+         font-size: 4rem
+         color: black
+         letter-spacing: .5rem
+         text-decoration: none
+         text-transform: uppercase
+         background: linear-gradient(120deg, transparent 0%, transparent 50%, white 50%)
+         background-size: 220%
+         padding: 1rem 2rem
+         transition: all .4s
+         display: inline-block
+
+      &:hover, &:active
+         transform: translateX(1rem)
+   &__toggle:checked ~ &__background
+      width: 6rem
+      height: 6rem
+      transform: scale(150)
+   &__toggle:checked ~ &__nav
+      width: 100%
+      opacity: 1
+
+   &__icon
+      position: relative
+      margin-top: 37px
+      &,
+      &::before,
+      &::after
+         width: 30px
+         height: 2px
+         background: white
+         display: inline-block
+      &::before,
+      &::after
+         content: ""
+         position: absolute
+         
+         left: 0
+         transition: all .2s
+      &::before
+         top: -8px
+      &::after
+         top: 8px
+         
+
+   &__button:hover &__icon::before
+      top: -10px
+   &__button:hover &__icon::after
+      top: 10px
+      
+
+   &__toggle:checked + &__button &__icon
+      background: transparent
+   &__toggle:checked + &__button &__icon::before
+      top: 0
+      transform: rotate(135deg)
+      background: black
+   &__toggle:checked + &__button &__icon::after
+      top: 0
+      transform: rotate(-135deg)
+      background: black

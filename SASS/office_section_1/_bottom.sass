@@ -1,0 +1,134 @@
+.office__seciton_1
+   height: 135.3rem
+   width: 100%
+   position: relative
+   background: linear-gradient(0deg, #312DFF 0%, rgba(49, 45, 255, 0.991353) 6.67%, rgba(49, 45, 255, 0.96449) 13.33%, rgba(49, 45, 255, 0.91834) 20%, rgba(49, 45, 255, 0.852589) 26.67%, rgba(49, 45, 255, 0.768225) 33.33%, rgba(49, 45, 255, 0.668116) 40%, rgba(49, 45, 255, 0.557309) 46.67%, rgba(49, 45, 255, 0.442691) 53.33%, rgba(49, 45, 255, 0.331884) 60%, rgba(49, 45, 255, 0.231775) 66.67%, rgba(49, 45, 255, 0.147411) 73.33%, rgba(49, 45, 255, 0.0816599) 80%, rgba(49, 45, 255, 0.03551) 86.67%, rgba(49, 45, 255, 0.0086472) 93.33%, rgba(49, 45, 255, 0) 100%)
+   //Данное свойство ниже, заставляет работать позиционирование с противоположными сторонами. Если убрать свойство, фон будет неверно заливаться
+   background-transform:rotate(180deg)
+   @include respond(mini)
+      height: 228rem
+      
+
+.photo_first
+   position: absolute
+   top: 23.4rem
+   width: 70.5rem
+   height: 47rem
+   left: 88.9rem
+   background: url(..//img//ofis1.png) center / cover
+
+   @include respond(mini)
+      left: 50%
+      transform: translateX(-50%)
+      width: 300px
+      height: 200px
+.office__name_first
+   @include oficce-name
+   position: absolute
+   top: 62rem
+   left: 125.1rem
+   @include respond(sixth-990)
+      font-size: 5rem
+   @include respond(mini)
+      left: 20%
+      top: 88rem
+
+
+      
+.office__adress_first
+   @include street-phone
+   position: absolute
+   top: 69.2rem
+   left: 125.1rem 
+   @include respond(sixth-990)
+      font-size: 4rem
+   @include respond(mini)
+      left: 20%
+      top: 95rem
+.office__phone_first
+   @include street-phone
+   position: absolute
+   top: 74.2rem
+   left: 125.1rem
+   @include respond(sixth-990)
+      font-size: 4rem
+   @include respond(mini)
+      left: 20%
+      top: 102rem
+.office__howToGet_first
+   @include howToGet
+   position: absolute
+   top: 80rem
+   left: 125.1rem
+   cursor: pointer
+   @include respond(sixth-990)
+      font-size: 3rem
+   @include respond(mini)
+      left: 20%
+      top: 109rem
+      font-size: 4rem
+
+
+.photo_second
+   position: absolute
+   top: 41.1rem
+   left: 18.3rem
+   width: 48.3rem
+   height: 72.3rem
+   background: url("..//img//ofis2.png") center / cover
+   @include respond(mini)
+      top: 130rem
+      left: 50%
+      transform: translateX(-50%)
+      background: url("..//img//ofis2-mini.png") center / cover
+      border-radius: 20px
+      width: 300px
+      height: 200px
+   
+.office__name_second
+   @include oficce-name
+   position: absolute
+   top: 96.6rem
+   left: 57.8rem
+   @include respond(sixth-990)
+      font-size: 5rem
+   @include respond(mini)
+      left: 20%
+      top: 195rem
+.office__adress_second
+   @include street-phone
+   position: absolute
+   top: 103.8rem
+   left: 57.8rem
+   @include respond(sixth-990)
+      font-size: 4rem
+   @include respond(mini)
+      left: 20%
+      top: 202rem
+.office__phone_second
+   @include street-phone
+   position: absolute
+   top: 108.8rem
+   left: 57.8rem
+   @include respond(sixth-990)
+      font-size: 4rem
+   @include respond(mini)
+      left: 20%
+      top: 209rem
+.office__howToGet_second
+   @include howToGet
+   position: absolute
+   top: 114.6rem
+   left: 57.8rem
+   cursor: pointer
+   @include respond(sixth-990)
+      font-size: 3rem
+   @include respond(mini)
+      left: 20%
+      top: 216rem
+      font-size: 4rem
+
+.arrow
+   display: inline-block
+   transform: rotate(-45deg)
+   cursor: pointer

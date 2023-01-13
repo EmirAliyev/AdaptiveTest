@@ -1,0 +1,48 @@
+
+
+.photo_third
+   position: absolute
+   top: -1.6rem
+   left: 39.7rem
+   width: 74.5rem
+   height: 49.6rem
+   background: url("..//img//ofis3.png") center / cover
+   @include respond(mini)
+      top: 10rem
+      left: 50%
+      transform: translateX(-50%)
+      width: 300px
+      height: 200px
+
+   
+
+.office__name_third
+   @include oficce-name
+   position: absolute
+   bottom: 69rem
+   left: 105.9rem
+   @include respond(sixth-990)
+      font-size: 5rem
+   @include respond(mini)
+      top: 75rem
+      left: 20%
+.office__adress_third
+   @include street-phone
+   position: absolute
+   bottom: 63.8rem
+   left: 105.9rem
+   @include respond(sixth-990)
+      font-size: 4rem
+   @include respond(mini)
+      top: 82rem
+      left: 20%
+.office__phone_third
+   @include street-phone
+   position: absolute
+   top: 15.6rem
+   left: 105.9rem
+   @include respond(sixth-990)
+      font-size: 4rem
+   @include respond(mini)
+      top: 89rem
+      left: 20%

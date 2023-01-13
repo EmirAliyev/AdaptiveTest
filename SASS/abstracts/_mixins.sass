@@ -1,0 +1,61 @@
+@mixin title-style
+   color: #F7F7FA
+   display: inline-block
+   font-size: 12rem
+   letter-spacing: -0.03em
+   font-family: 'MarbyPro'
+@mixin mini-title
+   color: #9A9AAD
+   font-size: 2rem
+   line-height: 140%
+   letter-spacing: 1%
+   @include respond(sixth-990)
+      font-size: 3rem
+@mixin oficce-name
+   font-weight: 400
+   font-size: 4.6rem
+   line-height: 100%
+   letter-spacing: -0.01em
+   color: #F7F7FA
+@mixin street-phone
+   font-weight: 400
+   font-size: 2.6rem
+   line-height: 100%
+   color: #F7F7FA
+@mixin howToGet
+   font-weight: 400
+   font-size: 2rem
+   line-height: 140%
+   color: #F7F7FA
+
+@mixin respond($breakpoint)
+   @if $breakpoint == mini
+      @media (max-width: 550px)
+         @content
+   @if $breakpoint == phone
+      @media (max-width: 690px)
+         @content
+   @if $breakpoint == seventh-820
+      @media (max-width: 820px)
+         @content
+   @if $breakpoint == sixth-990
+      @media (max-width: 990px)
+         @content
+   @if $breakpoint == fifth-1190
+      @media (max-width: 1190px)
+         @content
+   @if $breakpoint == fourth-1280
+      @media (max-width: 1280px)
+         @content  
+   @if $breakpoint == third-1400
+      @media (max-width: 1400px)
+         @content    
+   @if $breakpoint == second
+      @media (max-width: 1550px)
+         @content     
+   @if $breakpoint == first
+      @media (max-width: 1750px)
+         @content
+   @if $breakpoint == big-screen
+      @media (min-width: 2000px)
+         @content
